@@ -10,7 +10,7 @@ function Lenexa.Library(Name, ...)
         local Settings = _ --Array {}
 
         if Settings["AntiDupe"] == true then
-            local Storage = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+            local Storage = game.Players.LocalPlayer.PlayerGui
 
             if Storage:FindFirstChild(Name) then
                 local GuiTarget = Storage:FindFirstChild(Name)
