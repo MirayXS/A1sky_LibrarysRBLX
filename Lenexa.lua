@@ -10,7 +10,7 @@ function Lenexa.Library(Name, ...)
         local Settings = _ --Array {}
 
         if Settings["AntiDupe"] == true then
-            local Storage = game:GetService("CoreGui")
+            local Storage = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
             if Storage:FindFirstChild(Name) then
                 local GuiTarget = Storage:FindFirstChild(Name)
@@ -38,7 +38,8 @@ function Lenexa.Library(Name, ...)
     local FramesShadow = Instance.new("ImageLabel")
 
     LenexaGui.Name = Name
-    LenexaGui.Parent = game:GetService("CoreGui")
+    LenexaGui.ResetOnSpawn = false
+    LenexaGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
     LenexaGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
     Shadow.Name = "Shadow"
