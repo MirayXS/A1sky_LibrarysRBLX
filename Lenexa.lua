@@ -25,7 +25,7 @@ function Lenexa.Library(Name, ...)
 
     SettingParsing(...)
 
-    local KentaGUI = Instance.new("ScreenGui")
+    local LenexaGui = Instance.new("ScreenGui")
     local Shadow = Instance.new("ImageLabel")
     local Main = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
@@ -37,12 +37,12 @@ function Lenexa.Library(Name, ...)
     local UIListLayout = Instance.new("UIListLayout")
     local FramesShadow = Instance.new("ImageLabel")
 
-    KentaGUI.Name = Name
-    KentaGUI.Parent = game:GetService("CoreGui")
-    KentaGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    LenexaGui.Name = Name
+    LenexaGui.Parent = game:GetService("CoreGui")
+    LenexaGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
     Shadow.Name = "Shadow"
-    Shadow.Parent = KentaGUI
+    Shadow.Parent = LenexaGui
     Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
     Shadow.BackgroundTransparency = 1.000
     Shadow.Position = UDim2.new(0.473711938, 0, 0.572520137, 2)
