@@ -201,6 +201,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		ZIndexBehavior = Enum.ZIndexBehavior.Global,
 		ResetOnSpawn = false,
 	})
+	
 
 	self2.container = self:Create("ImageLabel", {
 		Draggable = true,
@@ -215,6 +216,9 @@ function finity.new(isdark, gprojectName, thinProject)
 		ZIndex = 2,
 		ImageTransparency = 1
     })
+    	local UICorner_2 = Instance.new("UICorner")
+	 UICorner_2.CornerRadius = UDim.new(0, 1)
+	    UICorner_2.Parent = self2.container
     
     self2.modal = self:Create("TextButton", {
         Text = "";
