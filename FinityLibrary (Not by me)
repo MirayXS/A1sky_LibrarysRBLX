@@ -560,6 +560,10 @@ function finity.new(isdark, gprojectName, thinProject)
 					ZIndex = 2,
 				})
 				
+				function cheat:UpdateText(Text)
+				    cheat.label.Text = Text
+				end
+				
 				if kind then
 					if string.lower(kind) == "checkbox" or string.lower(kind) == "toggle" then
 						if data then
