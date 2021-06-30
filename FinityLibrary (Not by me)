@@ -217,7 +217,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		ImageTransparency = 1
     })
     	local UICorner_2 = Instance.new("UICorner")
-	 UICorner_2.CornerRadius = UDim.new(0, 1)
+	 UICorner_2.CornerRadius = UDim.new(0, 2)
 	    UICorner_2.Parent = self2.container
     
     self2.modal = self:Create("TextButton", {
